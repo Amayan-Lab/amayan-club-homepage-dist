@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="initial-scale=1, width=device-width" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <meta property="og:site_name" content="Amayan Club NFT" />
+    <meta property="og:description" content="Amayan Club NFT" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="keywords" content="Amayan Club NFT" />
+    <meta name="description" content="Amayan Club NFT" />
+    <title>Amayan Club</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&amp;family=Poppins:wght@300&amp;family=Raleway:wght@500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #root {
+        position: relative;
+        z-index: 20;
+      }
+      #canvas-background {
+        position: fixed;
+        z-index: 10;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+      path {
+        fill: inherit !important;
+      }
+    </style>
+    <link rel="stylesheet" href="/umi.50f22470.css" />
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.5.25
+    </script>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <canvas id="canvas-background"></canvas>
+    <div id="root"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
+    <script>
+      const granimInstance = new Granim({
+        element: "#canvas-background",
+        direction: "top-bottom",
+        isPausedWhenNotInView: true,
+        states: {
+          "default-state": {
+            gradients: [
+              ["#16222A", "#3A6073"],
+              ["#000428", "#004e92"],
+            ],
+          },
+        },
+      });
+    </script>
+
+    <script
+      src="//unpkg.com/react@18.1.0/umd/react.production.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="//unpkg.com/react-dom@18.1.0/umd/react-dom.production.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/umi.c33361d2.js" crossorigin="anonymous"></script>
+  </body>
+</html>
